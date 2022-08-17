@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <malloc/malloc.h>
 
 /**
  *  查看编译当前代码的是c还是c++，查看当前的版本 
@@ -19,5 +21,10 @@ int main() {
 /* 否则就不是 */
 printf("this not is c or c++ pragram.\n");
 #endif
+
+    int a = 0;
+    int *s = NULL;
+    s = &a;
+    printf("%d\n", _msize((void *)s));
     return 0;
 }
