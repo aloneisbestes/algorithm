@@ -1,6 +1,11 @@
 #ifndef __HUFFMAN_TREE_H__
 #define __HUFFMAN_TREE_H__
 
+/**
+ * @brief 
+ * 赫夫曼树的实现
+ */
+
 typedef struct {
     int weight;     // 权重
     int parent, lchild, rchild; // 双亲和左右孩子结点
